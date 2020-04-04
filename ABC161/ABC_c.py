@@ -1,4 +1,4 @@
-n = int(input())
-a,b = map(int,input().split())
-A = list(map(int,input().split()))
-An = [list(map(int,input().split())) for i in range(n)]
+n,k = map(int,input().split())
+
+p = n%k
+print(min(p,abs(p-k)))

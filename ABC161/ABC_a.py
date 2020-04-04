@@ -1,4 +1,3 @@
-n = int(input())
-a,b = map(int,input().split())
-A = list(map(int,input().split()))
-An = [list(map(int,input().split())) for i in range(n)]
+a,b,c = map(int,input().split())
+
+print(c,a,b)

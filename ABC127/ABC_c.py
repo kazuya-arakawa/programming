@@ -3,11 +3,9 @@ N,M = map(int,input().split())
 LR = [list(map(int,input().split())) for i in range(M)]
 LR = np.array(LR)
 
-maxi = 10**6
-mini = 0
-for lr in LR:
-    mini = max(lr[0],mini)
-    maxi = min(lr[1],maxi)
+mini = max(LR[:,0])
+maxi = min(LR[:,1])
+
 if maxi-mini < 0:
     print(0)
 else:
