@@ -1,5 +1,6 @@
 k = int(input())
 
+# TLEになる
 # cnt = 9
 # if k < 10:
 #     print(k)
@@ -16,12 +17,11 @@ k = int(input())
 #         if cnt == k:
 #             print(i)
 #             break
-cnt = 9
-if k < 10:
-    print(k)
-else:
-    while(True):
-        s = str(k)
-        if abs(int(s[:-2])-int(s[:-1])) > 1:
-            k += 10
-        else
+l = [i for i in range(1,10)]
+for i in range(k):
+    if l[i]%10 != 0:
+        l.append(10*l[i]+l[i]%10-1)
+    l.append(10*l[i]+l[i]%10)
+    if l[i]%10 != 9:
+        l.append(10*l[i]+l[i]%10+1)
+print(l[k-1])
